@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Reset Successful</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .confirmation-container {
+      background-color: #1e1e1e;
+      padding: 3rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    }
+    .confirmation-container h1 {
+      font-size: 2rem;
+      color: #00ffb3;
+      margin-bottom: 1rem;
+    }
+    .confirmation-container p {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+    .confirmation-container a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #00ffb3;
+      color: #111;
+      padding: 0.9rem 2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .confirmation-container a:hover {
+      background-color: #00d99b;
+    }
+  </style>
+</head>
+<body>
+  <div class="confirmation-container">
+	<!-- success message -->
+		    <div th:if="${message}" class="success-message" style="color: green; font-size: 0.9rem;">
+		      <p th:text="${message}"></p>
+		    </div>
+    <h1>Password Changed</h1>
+    <p>Your password has been successfully reset.</p>
+    <a href="/">Login Now</a>
+  </div>
+</body>
+</html>
