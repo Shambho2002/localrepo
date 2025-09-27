@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 | Page Not Found</title>
+  <style>
+    body {
+      background: #1e1e1e;
+      color: #00ff99;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .console {
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin: 0;
+      color: #ff4c4c;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    .blink {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    a {
+      color: #00ff99;
+      text-decoration: none;
+      border: 1px solid #00ff99;
+      padding: 8px 18px;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background: #00ff99;
+      color: #1e1e1e;
+    }
+  </style>
+</head>
+<body>
+  <div class="console">
+    <h1>404</h1>
+    <p>Error: Page not found <span class="blink">_</span></p>
+    <a href="/">Return Home</a>
+  </div>
+</body>
+</html>
